@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>Feedback Form</title>
+</head>
+
+<body>
+
+    <h1 style="text-align: center; color: rgb(66, 242, 13); ">FORM</h1>
+
+    <div style="max-width: 400px;margin: 0 auto; background-color: gray; padding: 20px; ">
+
+        <form>
+            <h2>Feedback</h2>
+            <label for="feedback-type">Feedback Type :- </label>
+            <select name="feedback-type" id="feedback-type">
+                <option value="general">General Feedback</option>
+                <option value="bug">Report a Bug</option>
+                <option value="suggestion">Suggestion</option>
+            </select>
+
+            <h2>User's Message</h2>
+            <textarea name="message" id="message"></textarea>
+
+            <h2>Website Rating</h2>
+            <p>Please select your rating :-</p>
+            <input type="radio" id="rate1" name="rating" value="1">
+            <label for="rate1">1</label><br>
+            <input type="radio" id="rate2" name="rating" value="2">
+            <label for="rate2">2</label><br>
+            <input type="radio" id="rate3" name="rating" value="3">
+            <label for="rate3">3</label><br>
+            <input type="radio" id="rate4" name="rating" value="4">
+            <label for="rate4">4</label><br>
+            <input type="radio" id="rate5" name="rating" value="5">
+            <label for="rate5">5</label><br>
+
+            <h2>Your Age</h2>
+            <label for="age">Age :- </label>
+            <input type="number" id="age" name="age" min="10" max="100">
+
+            <h2>Email</h2>
+            <label for="email">Email :- </label>
+            <input type="email" id="email" name="email" required>
+
+            <h2>Password</h2>
+            <label for="password">Password :- </label>
+            <input type="password"  id="password" name="password" minlength="8" required>
+
+            <h2>Website (Optional)</h2>
+            <label for="website">Website :- </label>
+            <input type="url" id="website" name="website">
+
+            <h2>Terms and Conditions</h2>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions</label><br><br>
+
+            <input style="background-color: red; color: white; " type="submit" value="Submit Feedback">
+        </form>
+
+    </div>
+
+</body>
+
+</html>

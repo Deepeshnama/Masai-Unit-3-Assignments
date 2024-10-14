@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <title>Feedback Form</title>
+</head>
+
+<style>
+    div{
+        background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(239,1,1,1) 100%);
+        padding-bottom: 30px;
+    }
+
+    select{
+        width: 100%;
+        height: 30px;
+    }
+
+    form > input{
+        width: 100%;
+        height: 30px;
+    }
+
+    form button{
+        background-color: #4CB050; 
+        color: white;
+        margin-left: 160px;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+    }
+
+</style>
+
+<body>
+    
+    <div>
+        <h1 style="text-align: center; color: rgb(7, 7, 7); ">Feedback Form</h1>
+
+        <form style="max-width: 400px;margin: 0 auto; background-color: rgb(218, 213, 213); padding: 40px;" >
+            <h2>Feedback Type</h2>
+            <!-- <label for="feedback-type">Feedback Type :- </label> -->
+            <select name="feedback-type" id="feedback-type">
+                <option value="general">General Feedback</option>
+                <option value="bug">Report a Bug</option>
+                <option value="suggestion">Suggestion</option>
+            </select>
+
+            <h2>Message : </h2>
+            <textarea style="width: 100%; height: 100px;" name="message" id="message"></textarea>
+
+            <h2>Website Rating</h2>
+            <span style="display: flex;" >
+                <input type="radio" id="rate1" name="rating" value="1">
+                <label for="rate1">Excellent</label><br>
+                <input type="radio" id="rate2" name="rating" value="2">
+                <label for="rate2">Good</label><br>
+                <input type="radio" id="rate3" name="rating" value="3">
+                <label for="rate3">Average</label><br>
+                <input type="radio" id="rate4" name="rating" value="4">
+                <label for="rate4">Poor</label><br>
+            </span>
+
+            <h2>Your Age(10-100):</h2>
+            <input type="number" id="age" name="age" min="10" max="100">
+
+            <h2>Email*:</h2>
+            <input type="email" id="email" name="email" required>
+
+            <h2>Password(min. 8 characters):</h2>
+            <input type="password" id="password" name="password" minlength="8" required>
+
+            <h2>Website URL (Optional):</h2>
+            <input type="url" id="website" name="website"> <br> <br>
+
+            <span>
+                <input type="checkbox" id="terms" name="terms" style="width: 10px;" required>
+                <label for="terms">I agree to the terms and conditions</label><br><br>
+            </span>
+
+            <button>Submit</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

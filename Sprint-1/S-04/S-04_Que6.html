@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    table{
+        width: 70%;
+        height: 30%;
+        margin: 50px auto;
+    }
+
+    table > thead{
+        text-align: left;
+        font-style: italic;
+        font-size: 20px;
+    }
+
+    table tr:nth-child(3n+3){
+        color: rgb(4, 172, 4);
+        font-weight: bolder;
+    }
+
+    table tr:nth-child(4n+1){
+        font-style: italic;
+        font-size: 30px;
+    }
+
+    table tr:nth-child(10) + tr{
+        background-color: yellow;
+    }
+
+</style>
+
+<body>
+    
+    <table border="3">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price per Unit</th>
+            </tr>
+        </thead>
+    
+        <tr>
+            <td>Product 1</td>
+            <td>1</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Product 2</td>
+            <td>2</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Product 3</td>
+            <td>3</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Product 4</td>
+            <td>4</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Product 5</td>
+            <td>5</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Product 6</td>
+            <td>6</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Product 7</td>
+            <td>7</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Product 8</td>
+            <td>8</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Product 9</td>
+            <td>9</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Product 10</td>
+            <td>10</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td colspan="2">Sum</td>
+            <td colspan="2">80</td>
+        </tr>
+    </table>
+
+</body>
+</html>

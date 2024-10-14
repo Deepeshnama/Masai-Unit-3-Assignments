@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>Products Table</title>
+</head>
+
+<style>
+    thead{
+        background-color: green;
+    }
+
+    thead tr th{
+        padding: 40px 20px;
+        font-size: 30px;
+    }
+
+    table tr td{
+        padding: 40px 20px;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+
+    <div>
+
+        <table border="1" style="padding: 10px 10px 200px 10px ; margin: 0 auto; border-collapse: collapse;" >
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Price per Unit</th>
+                    <th>Description</th>
+                    <th colspan="2">Total Price</th>
+                </tr>
+            </thead>
+        
+            <tr>
+                <td>Product 1</td>
+                <td>2</td>
+                <td>10</td>
+                <td>This is product 1</td>
+                <td colspan="2">$20</td>
+            </tr>
+            <tr>
+                <td>Product 2</td>
+                <td>3</td>
+                <td>20</td>
+                <td>This is Product 2</td>
+                <td colspan="2">$60</td>
+            </tr>
+            <tr style="font-weight: bold; background-color: #E6E6E6;">
+                <td colspan="4">Sum</td>
+                <td colspan="2">$80</td>
+            </tr>
+        </table>
+
+    </div>
+
+
+</body>
+
+</html>

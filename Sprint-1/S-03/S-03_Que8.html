@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        background-color: rgb(227, 219, 219);
+    }
+
+    .main {
+        display: flex;
+    }
+
+    .maggi {
+        background-color: white;
+        width: 10%;
+        height: 100vh;
+    }
+
+    .maggi>p {
+        background-color: white;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .middle-page {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .first-part {
+        width: 100%;
+        text-align: center;
+        border-right: 2px solid gray
+    }
+
+    .second-part {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .second-part button {
+        width: 50%;
+        height: 40px;
+        background-color: black;
+        margin-bottom: 30px;
+        color: white;
+    }
+
+    .middle-page>div {
+        margin: 0 auto;
+    }
+
+    .middle-page div button {
+        margin-top: 20px;
+        border: 1px solid gray;
+    }
+
+    .fb {
+        background-color: rgb(4, 92, 165);
+        color: white;
+        width: 200px;
+        height: 40px;
+    }
+
+    .google {
+        background-color: white;
+        margin-bottom: 60px;
+        width: 200px;
+        height: 40px;
+    }
+
+    input {
+        margin-bottom: 20px;
+        width: 400px;
+        height: 40px;
+        border: 1px solid gray;
+    }
+
+    label {
+        color: gray;
+        padding-right: 340px;
+    }
+
+    .email {
+        background-color: rgb(180, 178, 178);
+        color: white;
+        width: 400px;
+        height: 40px;
+    }
+
+    .password {
+        border: none !important;
+        margin-left: 250px;
+        text-decoration: underline;
+        color: rgb(136, 133, 133);
+    }
+
+    .middle-page>div {
+        width: 50%;
+    }
+
+    ul {
+        width: 35%;
+    }
+
+    ul li {
+        padding-top: 10px;
+    }
+
+    .last {
+        margin-left: 140px;
+        height: 300px;
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logos {
+        width: 30%;
+        margin: 100px;
+    }
+
+    .logos section {
+        border: 1px solid gray;
+        width: 50px;
+        height: 50px;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .logos div {
+        display: flex;
+        background-color: black;
+    }
+
+    .logo1 section {
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(59, 54, 54);
+    }
+
+    .logo2 section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(59, 54, 54);
+    }
+    .ul-div ul{
+        background-color: black;
+        /* border: 2px solid green; */
+    }
+
+    .ul-div li {
+        color: white;
+        background-color: black;
+    }
+
+    .ul-div{
+        background-color: black;
+    }
+
+</style>
+
+<body>
+
+    <div class="main">
+
+        <div class="maggi">
+            <img style="height: 50px; width: 80px; background-color: yellow;"
+                src="C:\Users\DELL\OneDrive\Desktop\MASAI UNITS ASSIGNMENTS\MASAI - UNIT - 3\Image\maggi.png"
+                alt="maggi image">
+            <p>Recipes</p>
+            <p>Maggi</p>
+            <p>My Menu Plan</p>
+            <p>Search</p>
+            <p>Login</p>
+        </div>
+
+        <div class="middle-page">
+
+            <div class="first-part">
+                <h1>My Maggi</h1>
+                <h2>Welcome back!</h2>
+
+                <button class="fb">Sign in with Facebook</button>
+                <br>
+
+                <button class="google">Sign in with Google</button>
+                <br>
+
+                <label for="email">E-mail</label> <br>
+                <input type="text" id="email" placeholder="Enter your e-mail address here *">
+                <br>
+
+                <label for="password">Password</label> <br>
+                <input type="text" id="email" placeholder="Enter your password here *">
+                <br>
+
+                <button class="email">Login via e-mail</button> <br>
+
+                <button class="password">Forgot your password?</button>
+
+            </div>
+
+
+            <div class="second-part">
+                <h1>Not registered yet ?</h1>
+
+                <button>Register</button>
+
+                <h3>Join Maggi today!</h3>
+
+                <ul>
+                    <li>Your personal newsletter with exciting recipes and ideas</li>
+                    <li>Personalize your newsletter to your preferences</li>
+                    <li>Get to know about Maggi products</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="last">
+
+        <div class="logos">
+            <div class="logo1">
+                <section>Fb</section>
+                <section>Yt</section>
+                <section>Ig</section>
+                <section>Tw</section>
+            </div>
+
+            <div class="logo2">
+                <section>EN</section>
+                <section>HI</section>
+                <section>MR</section>
+                <section>TE</section>
+                <section>KN</section>
+            </div>
+        </div>
+
+
+        <div class="ul-div" >
+            <ul>
+                <li>Contact us</li>
+                <li>Terms & Conditions</li>
+                <li>Copyright</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
